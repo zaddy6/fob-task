@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<body>
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+
+<h2>Here are some links to help you start: </h2>
+
+<ul>
+  <li>
+    <h4><a routerLink="/" routerLinkActive="active-link">Home</a></h4>
+  </li>
+  <li>
+    <h4><a routerLink="home" routerLinkActive="active-link">My dashboard</a></h4>
+  </li>
+</ul>
+
+<ul *ngIf="isLogged == 'true'">
+  <li>
+      <h4><a routerLink="logout" routerLinkActive="active-link">Logout</a></h4>
+    </li>
+</ul>
+
+    
+<router-outlet></router-outlet>
+</div>
+</body>
